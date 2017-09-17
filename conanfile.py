@@ -2,25 +2,25 @@ from conans import ConanFile, tools, os
 
 class BoostInterprocessConan(ConanFile):
     name = "Boost.Interprocess"
-    version = "1.64.0"
+    version = "1.65.1"
     short_paths = True
     url = "https://github.com/bincrafters/conan-boost-interprocess"
-    description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
+    description = "Please visit http://www.boost.org/doc/libs/1_65_1/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_names = ["interprocess"]
-    requires =  "Boost.Assert/1.64.0@bincrafters/testing", \
-                      "Boost.Config/1.64.0@bincrafters/testing", \
-                      "Boost.Container/1.64.0@bincrafters/testing", \
-                      "Boost.Core/1.64.0@bincrafters/testing", \
-                      "Boost.Date_Time/1.64.0@bincrafters/testing", \
-                      "Boost.Integer/1.64.0@bincrafters/testing", \
-                      "Boost.Intrusive/1.64.0@bincrafters/testing", \
-                      "Boost.Move/1.64.0@bincrafters/testing", \
-                      "Boost.Static_Assert/1.64.0@bincrafters/testing", \
-                      "Boost.Type_Traits/1.64.0@bincrafters/testing", \
-                      "Boost.Unordered/1.64.0@bincrafters/testing", \
-                      "Boost.Unordered/1.64.0@bincrafters/testing", \
-                      "Boost.Winapi/1.64.0@bincrafters/testing"
+    requires =  "Boost.Assert/1.65.1@bincrafters/testing", \
+                      "Boost.Config/1.65.1@bincrafters/testing", \
+                      "Boost.Container/1.65.1@bincrafters/testing", \
+                      "Boost.Core/1.65.1@bincrafters/testing", \
+                      "Boost.Date_Time/1.65.1@bincrafters/testing", \
+                      "Boost.Integer/1.65.1@bincrafters/testing", \
+                      "Boost.Intrusive/1.65.1@bincrafters/testing", \
+                      "Boost.Move/1.65.1@bincrafters/testing", \
+                      "Boost.Static_Assert/1.65.1@bincrafters/testing", \
+                      "Boost.Type_Traits/1.65.1@bincrafters/testing", \
+                      "Boost.Unordered/1.65.1@bincrafters/testing", \
+                      "Boost.Unordered/1.65.1@bincrafters/testing", \
+                      "Boost.Winapi/1.65.1@bincrafters/testing"
 
                       #assert1 config0 container7 core2 date_time11 integer3 intrusive6 move3 static_assert1 type_traits3 unordered8 winapi1
                       
