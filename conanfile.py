@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostInterprocessConan(ConanFile):
     name = "boost_interprocess"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-interprocess"
+    url = "https://github.com/bincrafters/conan-boost_interprocess"
 
     lib_short_names = ["interprocess"]
     is_header_only = True
