@@ -8,7 +8,8 @@ class BoostInterprocessConan(ConanFile):
     name = "boost_interprocess"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_interprocess"
-
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["interprocess"]
     is_header_only = True
 
