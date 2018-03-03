@@ -11,10 +11,15 @@ class BoostInterprocessConan(ConanFile):
     author = "Bincrafters <bincrafters@gmail.com>"
     exports = ["LICENSE.md"]
     lib_short_names = ["interprocess"]
+    settings = "os"
     is_header_only = True
 
     def package_id_additional(self):
         self.info.header_only()
+
+    def package_info_additional(self):
+        if self.settings.os == "Linux":
+            self.cpp_info.libs.append("rt")
 
     requires = (
         "boost_package_tools/1.66.0@bincrafters/testing",
