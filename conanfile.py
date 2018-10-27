@@ -30,6 +30,3 @@ class BoostInterprocessConan(base.BoostBaseConan):
         if self.settings.os == "Linux":
             self.cpp_info.libs.append("rt")    
             
-    def package_id_additional(self):
-        self.info.header_only()
-        self.info.settings.os = str(self.settings.os)
