@@ -4,7 +4,7 @@
 from conans import python_requires
 
 
-base = python_requires("boost_base/1.67.0@bincrafters/testing")
+base = python_requires("boost_base/1.68.0@bincrafters/testing")
 
 class BoostInterprocessConan(base.BoostBaseConan):
     name = "boost_interprocess"
@@ -28,5 +28,4 @@ class BoostInterprocessConan(base.BoostBaseConan):
 
     def package_info_additional(self):
         if self.settings.os == "Linux":
-            self.cpp_info.libs.append("rt")    
-            
+            self.cpp_info.libs.append("rt")
