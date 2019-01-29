@@ -8,6 +8,7 @@ base = python_requires("boost_base/1.69.0@bincrafters/testing")
 
 class BoostInterprocessConan(base.BoostBaseConan):
     name = "boost_interprocess"
+    version = "1.69.0"
     url = "https://github.com/bincrafters/conan-boost_interprocess"
     lib_short_names = ["interprocess"]
     header_only_libs = ["interprocess"]
